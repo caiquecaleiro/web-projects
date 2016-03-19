@@ -33,3 +33,11 @@
 .container-fluid {
   padding: 70px 0px 70px 0px;
 }
+
+#home .panel-content {
+  height: 400px;
+}
+
+#about .panel-content {
+  height: 500px;
+}
