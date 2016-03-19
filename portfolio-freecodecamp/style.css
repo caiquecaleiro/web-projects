@@ -5,11 +5,16 @@
 }
 
 .text-color {
+  font-family: 'Open Sans', sans-serif;
   color: #555555;
 }
 
 .framework-padding {
   margin-top: 55px;
+}
+
+.img-padding {
+  padding-top: 70px;
 }
 
 .profile-image {
@@ -25,10 +30,34 @@
 }
 
 .img-size {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
-.container-fluid {
-  padding: 70px 0px 70px 0px;
+#home .padding-content {
+  padding: 0 0 70px 0;
+}
+
+#about .padding-content {
+  padding: 70px 0 70px 0;
+}
+
+#portfolio .padding-content {
+  padding: 35px 0 35px 0;
+}
+
+#contact .padding-content {
+  padding: 35px 0 35px 0;
+}
+
+#contact h3 {
+  margin-bottom: 25px;
+}
+
+#about p {
+  margin-top: 55px;
+}
+
+.skills {
+  margin-top: 55px;
 }
