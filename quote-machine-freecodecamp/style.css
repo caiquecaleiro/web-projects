@@ -1,0 +1,12 @@
+.rectangular-box {
+  margin: 10% auto;
+  background-color: #00B8E6;
+  width: 500px;
+  padding: 60px 20px 60px 20px;
+}
+
+.quote-text {
+  font-size: 25px;
+  text-align: center;
+  color: #FFF;
+}
