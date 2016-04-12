@@ -1,6 +1,6 @@
 .rectangular-box {
   margin: 10% auto;
-  background-color: #00B8E6;
+  background-color: #CCC;
   width: 500px;
   padding: 60px 20px 60px 20px;
   color: #FFF;
@@ -16,4 +16,18 @@
     padding-right: 20px;
     font-size: 110%;
     text-align:right;
+}
+
+.button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 8px 5px 8px;
+  font-size: 110%;
+  background-color: #AAA;
+  text-align: center;
+}
+
+body {
+  background: url('http://i1.ytimg.com/vi/KBOzZMYqQ4Q/maxresdefault.jpg');
 }
