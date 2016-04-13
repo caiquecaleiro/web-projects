@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $('#new-quote').on('click', function() {
-    console.log('Click test!');
+  $('#quote-button').on('click', function(e) {
+    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(quote) {
+      console.log(quote);
+    });
   });
 });
