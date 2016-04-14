@@ -5,8 +5,8 @@ $(document).ready(function() {
 
   function getRandomQuote() {
     $.getJSON('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=', function(quote) {
-    // Clean the text and add a space char
-    $('#quote').text(' ');
+    // Clean the quote text
+    $('#quote').text('');
     // Add the quote text
     $('#quote').append(quote[0].content);
     // Clean the author text
@@ -19,6 +19,6 @@ $(document).ready(function() {
   }
 
   function tweetQuote() {
-    console.log('Test tweet button!');
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($('#quote').text() + '- ' + $('#author').text()));
   }
 });
