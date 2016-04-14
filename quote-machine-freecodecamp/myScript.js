@@ -1,6 +1,7 @@
 $(document).ready(function() {
   getRandomQuote();
   $('#quote-button').on('click', getRandomQuote);
+  $('#twitter-button').on('click', tweetQuote);
 
   function getRandomQuote() {
     $.getJSON('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=', function(quote) {
@@ -15,5 +16,9 @@ $(document).ready(function() {
     // To remove the paragraph tag that comes with the content
     $('#quote').text($('#quote').text());
    });
+  }
+
+  function tweetQuote() {
+    console.log('Test tweet button!');
   }
 });
